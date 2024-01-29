@@ -25,6 +25,8 @@ Which tag has the following text? - *Automatically remove the container when it 
 - `--rmc`
 - `--rm`
 
+docker run --rm <image_name>
+
 
 ## Question 2. Understanding docker first run 
 
@@ -37,6 +39,14 @@ What is version of the package *wheel* ?
 - 1.0.0
 - 23.0.1
 - 58.1.0
+
+Create Docker image:
+>>>docker run -it -entrypoint=bash python:3.9
+List of Containers:
+>>>docker ps
+Find the Container ID to run below code.
+So you can see pip list
+>>>docker exec <container ID> pip list
 
 
 # Prepare Postgres
