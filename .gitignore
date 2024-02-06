@@ -18,3 +18,4 @@ serving_dir
 venv
 **week_1_basics_n_setup/*
 
+02-workflow-orchestration/green_tripdata_2020-10.csv
