@@ -19,6 +19,11 @@ Question 1: What is count of records for the 2022 Green Taxi Data??
 - 1,936,423
 - 253,647
 
+Google bigQuery:
+SELECT count(VendorID) FROM `turnkey-triumph-412303.ny_green_taxi_2022.ny_green_2022`;
+
+Result: 840402
+
 ## Question 2:
 Write a query to count the distinct number of PULocationIDs for the entire dataset on both the tables.</br> 
 What is the estimated amount of data that will be read when this query is executed on the External Table and the Table?
@@ -28,6 +33,8 @@ What is the estimated amount of data that will be read when this query is execut
 - 0 MB for the External Table and 0MB for the Materialized Table
 - 2.14 MB for the External Table and 0MB for the Materialized Table
 
+<!-- SELECT COUNT(DISTINCT(PULocationID)) FROM `turnkey-triumph-412303.ny_green_taxi_2022.ny_green_2022_native_table` -->
+With the query 0 MB for external and 6.4 MB for native table.
 
 ## Question 3:
 How many records have a fare_amount of 0?
@@ -35,6 +42,9 @@ How many records have a fare_amount of 0?
 - 128,219
 - 112
 - 1,622
+
+SELECT COUNT(*) FROM `turnkey-triumph-412303.ny_green_taxi_2022.ny_green_2022_native_table` WHERE fare_amount = 0;
+Answer: 1622
 
 ## Question 4:
 What is the best strategy to make an optimized table in Big Query if your query will always order the results by PUlocationID and filter based on lpep_pickup_datetime? (Create a new table with this strategy)
