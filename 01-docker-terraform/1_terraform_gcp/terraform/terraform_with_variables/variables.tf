@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "My Credentials"
-  default     = "<Path to your Service Account json file>"
+  default     = "/Users/aytekin/Desktop/de_zoomcamp/data-engineering-zoomcamp/turnkey-triumph-412303-6e16cb0bb63c.json"
   #ex: if you have a directory where this file is called keys with your service account json file
   #saved there as my-creds.json you could use default = "./keys/my-creds.json"
 }
@@ -8,7 +8,7 @@ variable "credentials" {
 
 variable "project" {
   description = "Project"
-  default     = "<Your Project ID>"
+  default     = "turnkey-triumph-412303"
 }
 
 variable "region" {
@@ -26,13 +26,13 @@ variable "location" {
 variable "bq_dataset_name" {
   description = "My BigQuery Dataset Name"
   #Update the below to what you want your dataset to be called
-  default     = "demo_dataset"
+  default     = "ny_taxi_2"
 }
 
 variable "gcs_bucket_name" {
   description = "My Storage Bucket Name"
   #Update the below to a unique bucket name
-  default     = "terraform-demo-terra-bucket"
+  default     = "ny_taxi_2019_20_21_green_yellow"
 }
 
 variable "gcs_storage_class" {
