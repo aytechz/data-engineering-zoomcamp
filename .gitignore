@@ -21,3 +21,5 @@ venv
 *.parquet
 turnkey-triumph-412303-6e16cb0bb63c.json
 cohorts/2024/workshops/dlt_resources/data_ingestion_workshop.pdf
+cohorts/2024/workshops/dlt_resources/dlt_ipykernel_launcher.duckdb
+cohorts/2024/workshops/dlt_resources/dlt_ipykernel_launcher.duckdb.wal
